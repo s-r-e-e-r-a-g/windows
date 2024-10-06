@@ -1,0 +1,9 @@
+.windowStartUp{
+    position: absolute;
+    left: 0;
+    bottom: clamp(35px, 4.8vh, 40px);
+    height: 71vh;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(36, 36, 36, 0.829);
+    backdrop-filter: blur(10px);
+}

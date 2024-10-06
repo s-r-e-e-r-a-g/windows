@@ -1,0 +1,21 @@
+.searchInput{
+    background-color: #fff;
+    color: black;
+    height: 100%;
+    width: 15vw;
+    min-width: 160px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.searchInput .inputBar{
+    width: 100%;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+}
+.searchInput span{
+    font-size: 28px;
+}
