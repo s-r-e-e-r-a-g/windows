@@ -1,0 +1,72 @@
+.lockWrapper{
+    position: relative;
+    background-color: red;
+    height: 100vh;
+    background: url(../../assets/images/wallpaper/lockscreen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+.lockWrapper::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+.datenTime{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #fff;
+    font-size: clamp(25px, 3vw, 32px);
+}
+.lockTime{
+    font-weight: 300;
+}
+.date{
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.profile{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.profile .profImg{
+    background-color: #ffffff80;
+    width: clamp(120px, 25vw, 170px);
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+}
+.profImg span{
+    font-size: clamp(100px, 20vw, 150px);
+    font-weight: 400;
+}
+.profile h1{
+    margin: 10px;
+    font-weight: 300;
+}
+#signin{
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 60%;
+    height: 24px;
+    padding: 1px 5px 4px 10px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+#signin:hover{
+    background-color: #00adff;
+    color: #fff;
+}

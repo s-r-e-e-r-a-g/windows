@@ -1,0 +1,102 @@
+.baseBar{
+    background: linear-gradient(to right, #1d1d1d, #1d1d1e, #1e1e1f, #1d1d1d, #1d1d1e);
+    /* background-color: rgba(0, 0, 0, 0.377); */
+    width: 100vw;
+    height: clamp(35px, 4.8vh, 40px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 100;
+    user-select: none;
+}
+.win{
+    position: relative;
+    height: 100%;
+    background-color: transparent;
+    aspect-ratio: 5 / 4;
+    transition: 0.5s;
+}
+.win:hover{
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.win .winLogo{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    padding: 8px;
+}
+.baseBar .appWrapper{
+    position: relative;
+    display: flex;
+    gap: 2px;
+    height: clamp(35px, 4.8vh, 50px);
+}
+.baseBar .bottomRight{
+    position: absolute;
+    right: 0;
+    /* background-color: #cfc9c94f; */
+    display: flex;
+    align-items: center;
+    /* padding-right: 15px; */
+    height: 100%;
+    color: #fff;
+    cursor: default;
+}
+
+.bottomRight .notification, .sound, .internet, .dropUp, .lang, .battery, .baseTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1px 0 2px;
+    position: relative;
+}
+.bottomRight .notification{
+    padding: 0 10px;
+}
+.bottomRight .baseTime{
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    padding: 0 12px;
+}
+.bottomRight .lang p{
+    font-size: 12px;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+.hoverEffect{
+    height: 100%;
+}
+.hoverEffect:hover{
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.battery .battery_message{
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    position: absolute;
+    white-space: nowrap;
+    top: -40%;
+    z-index: 10;
+    padding: 1px 4px;
+    display: none;
+}
+.battery:hover  .battery_message{
+    display: block;
+}
+.dropUp .dropUpBox{
+    position: absolute;
+    background-color: #222222d5;
+    bottom: 100%;
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    display: none;
+}
+.dropUp:focus .dropUpBox{
+    display: block;
+}
+.notification:focus .NotificationBar{
+    right: 0;
+}

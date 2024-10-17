@@ -1,0 +1,115 @@
+.battery-container{
+    --bgcolor: #292929;
+    position: relative;
+    background-color: var(--bgcolor);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: centers;
+    overflow: hidden;
+}
+.battery_wrapper {
+    position: relative;
+    width: 130px;
+    aspect-ratio: 7 / 16;
+    /* background-color: #fff; */
+    z-index: 10;
+    margin: 0 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.battery_progress{
+    position: absolute;
+    height: 74%;
+    width: 76%;
+    border-radius: 0;
+    left: 12%;
+    bottom: 11%;
+    background-color: #fff;
+    z-index: 5;
+    overflow: hidden;
+}
+.battery_wrapper .batteryImage{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* background-color: blue; */
+    z-index: 6;
+}
+.batterStatusInfo{
+    height: 100%;
+    background-color: var(--bgcolor);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.battery-container h3{
+    font-size: clamp(15px, 2vw, 18px);
+}
+.battery-container h2{
+    font-size: clamp(17px, 2vw, 22px);
+}
+.chart-container{
+    width: 70%; 
+    height: 50%;
+}
+.chargingImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+    height: 80%;
+    z-index: 10;
+    object-fit: contain;
+}
+.progress{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    /* background-color: green; */
+}
+.progress .low{
+    background-color: red;
+}
+.battery-0{
+    background-color: #FF0000;
+}
+.battery-1{
+    background-color: #FF3300;
+}
+.battery-2{
+    background-color: #FF6600;
+}
+.battery-3{
+    background-color: #FF9900;
+}
+.battery-4{
+    background-color: #FFCC00;
+}
+.battery-5{
+    background-color: #FFFF00;
+}
+.battery-6{
+    background-color: #CCFF00;
+}
+.battery-7{
+    background-color: #99FF00;
+}
+.battery-8{
+    background-color: #66FF00;
+}
+.battery-9{
+    background-color: #33FF00;
+}
+.battery-10{
+    background-color: #00FF00;
+}

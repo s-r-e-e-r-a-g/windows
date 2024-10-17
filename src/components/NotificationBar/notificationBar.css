@@ -1,0 +1,77 @@
+.NotificationBar{
+    --notiWidth: 22vw;
+    position: absolute;
+    width: var(--notiWidth);
+    right: calc(var(--notiWidth) * -1);
+    height: calc(100vh - 100%);
+    background-color: rgba(36, 36, 36, 0.829);
+    bottom: 100%;
+    z-index: -2;
+    transition: 0.6s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.notification_top{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.notification_top .noti_link{
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 10px;
+    color: lightblue;
+}
+.notification_top .noti_link:hover{
+    color: #fff;
+}
+.notification_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #8b8b8b;
+}
+.notification_footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.ex_col{
+    font-size: 12px;
+    margin: 0 0 6px 10px;
+    color: lightblue;
+}
+.ex_col:hover{
+    color: #fff;
+}
+.noti_icons_cont{
+    height: auto;
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+.noti_icon{
+    background-color: rgb(85, 85, 85);
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+.noti_icon:hover{
+    background-color: rgb(119, 119, 119);
+    outline: 1px solid #fff;
+}
+.noti_icon span{
+    font-size: 17px;
+}
+.noti_icon p{
+    font-size: 11px;
+    white-space: nowrap;
+}
